@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Profile Search</title>
+  <%= stylesheet_link_tag  'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <form id="add-profile-form" class="navbar-form navbar-left">
+        <input type="text" name="url" class="form-control" placeholder="Add New Profile URL">
+        <button type="submit" class="btn btn-default">GO</button>
+      </form>
+      <form id="search-skills-form" class="navbar-form navbar-left">
+        <input  type="text" name="skills" class="form-control" placeholder="Search Skills">
+        <button type="submit" class="btn btn-default">GO</button>
+      </form>
+      <form id="search-name-form" class="navbar-form navbar-left">
+        <input type="text" name="name" class="form-control" placeholder="Search Name">
+        <button type="submit" class="btn btn-default">GO</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
+  <%= javascript_include_tag 'application' %>
+</body>
+</html>

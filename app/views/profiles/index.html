@@ -1,0 +1,43 @@
+<div id="results-injection">
+  <div id="profile_search_header" class="jumbotron">
+    <h1>LinkedIn Profile Search</h1>
+    <p>Please add a new Profile or Search existing ones above</p>
+  </div>
+</div>
+<!-- Templates -->
+<script type="text/html" id="profile-template">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">
+        <span data-innerHTML="name"></span> :: <span data-innerHTML="title"></span>
+      </h2>
+    </div>
+    <div class="panel-body">
+      <strong>Skills ::</strong> <span data-innerHTML="skills"></span>
+    </div>
+  </div>
+</script>
+
+<script type="text/html" id="success-template">
+  <div class="alert alert-success" role="alert">
+    <strong data-innerHTML="header"></strong> <span data-innerHTML="message"></span>
+  </div>
+</script>
+
+<script type="text/html" id="info-template">
+  <div class="alert alert-info" role="alert">
+    <strong data-innerHTML="header"></strong> <span data-innerHTML="message"></span>
+  </div>
+</script>
+
+<script type="text/html" id="warning-template">
+  <div class="alert alert-warning" role="alert">
+    <strong data-innerHTML="header"></strong> <span data-innerHTML="message"></span>
+  </div>
+</script>
+
+<script type="text/html" id="danger-template">
+  <div class="alert alert-danger" role="alert">
+    <strong data-innerHTML="header"></strong> <span data-innerHTML="message"></span>
+  </div>
+</script>

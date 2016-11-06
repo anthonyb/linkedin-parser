@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  port: <%= ENV['POSTGRES_PORT'] || 5432 %>
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+development:
+  <<: *default
+  database: clutter_development_interview
+
+test:
+  <<: *default
+  database: clutter_test_interview
+
+production:
+  <<: *default
+  database: clutter_interview
