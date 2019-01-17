@@ -6,8 +6,8 @@ Mac: (setting up rails)
 2. `brew install rbenv`
 3. `rbenv install`
 4. `gem install bundler`
-5. `git clone git@github.com:clutter/clutter-interview-rails-ng.git`
-6. `cd clutter-interview-rails-ng`
+5. `git clone git@github.com:anthonyb/linkedin-parser.git`
+6. `cd linkedin-parser`
 
 That should get you up and running, to run your local server run `rails s` in your terminal, with default settings that will let you access your app at `localhost:3000`
 
