@@ -1,4 +1,4 @@
-# Rails Interview Project
+# Parser Test Project
 
 Mac: (setting up rails)
 
