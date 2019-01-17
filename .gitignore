@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 /.env
+working
+.DS_Store
+
